@@ -1,0 +1,77 @@
+/* Background */
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Style */
+.card {
+  border-radius: 15px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+.card h3 {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input Fields */
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  transition: 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 6px rgba(37, 117, 252, 0.5);
+}
+
+/* Labels */
+.form-label {
+  font-weight: 500;
+  color: #444;
+}
+
+/* Button */
+.btn-primary {
+  background: #2575fc;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #1a5fd1;
+}
+
+/* Error Messages */
+.error {
+  color: #e63946;
+  font-size: 0.85em;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+}
